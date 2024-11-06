@@ -36,14 +36,9 @@ link ".profile"
 
 link ".config/fontconfig"
 link ".config/gtk-3.0"
-link ".config/dunst"
-link ".config/wezterm"
-link ".config/sway"
 link ".config/zsh"
 link ".config/gdb"
 link ".config/git"
-link ".config/gammastep"
-link ".config/kanshi"
 link ".config/nvim"
 link ".config/ruff"
 
@@ -81,9 +76,6 @@ chattr +C "$HOME/.mozilla"
 # Mark chromium nodatacow
 mkdir -p "$XDG_CONFIG_HOME/chromium"
 chattr +C "$XDG_CONFIG_HOME/chromium"
-
-# Configure Rust toolchain
-rustup default stable
 
 current_user="$(whoami)"
 if [ "$current_user" != "shellcode" ]; then
